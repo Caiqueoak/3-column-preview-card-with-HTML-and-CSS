@@ -1,0 +1,104 @@
+*{
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --paragraphs: hsla(0, 0%, 100%, 0.75);
+    --Bg-headings-buttons:  hsl(0, 0%, 95%);
+    --Lexend-Deca-weights: 400;
+    --Big-Shoulders-weights: 700;
+    --Lexend-Deca: 'Lexend Deca', sans-serif;
+    --Big-Shoulders: 'Big Shoulders Display', cursive;
+    box-sizing: border-box;
+}
+body{
+    Font-size: 15px;
+    margin: 0;
+    /* EYES PROTECTOR */
+    background-color: rgb(56, 55, 55);
+}
+
+/* Main Card */
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 933px;
+    height: 450px;
+}
+
+/* CARDS */
+.cards{
+    --cards-padding: 50px;
+    position: relative;
+    text-align: left;
+    padding: var(--cards-padding);
+}
+.sedans-card{
+    background-color: var(--Bright-orange);
+    border-radius: 10px 0 0 10px;
+}
+.suvs-card{
+    background-color: var(--Dark-cyan);
+}
+.luxury-card{
+    background-color: var(--Very-dark-cyan);
+    border-radius: 0 10px 10px 0;
+}
+
+/* Card Items */
+.title{
+    color: var(--Bg-headings-buttons);
+    font-family: var(--Big-Shoulders);
+    font-weight: var(--Big-Shoulders-weights);
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    padding: 25px 0;
+}
+.description-text{
+    color: var(--paragraphs);
+    font-family: var(--Lexend-Deca);
+    font-weight: var(--Lexend-Deca-weights);
+    line-height: 1.4rem;
+}
+.learn-more-button{
+    position: absolute;
+    bottom: var(--cards-padding);
+    font-family: var(--Lexend-Deca);
+    font-weight: var(--Lexend-Deca-weights);
+    background-color: var(--Bg-headings-buttons);
+    border-radius: 100px;
+    height: 2.7rem;
+    width: 8.5rem;
+    text-align: center;
+    text-decoration: none;
+}
+.button-label{
+    position: relative;
+    top: 25%;
+}
+.sedans-button{
+    color: var(--Bright-orange);
+}
+.suvs-button{
+    color: var(--Dark-cyan);
+}
+.luxury-button{
+    color: var(--Very-dark-cyan);
+}
+
+footer{
+    position: absolute;
+    text-align: center;
+    font-size: 1.2rem;
+    bottom: 5px;
+    width: 100%;
+    color: white;
+}
+footer a{
+    color: rgb(155, 62, 243);
+}
