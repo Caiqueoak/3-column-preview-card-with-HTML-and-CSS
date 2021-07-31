@@ -16,10 +16,11 @@ body{
 
 /* Main Card */
 .container{
-    height: 100vh;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 .main-card{
     display: grid;
@@ -58,7 +59,7 @@ body{
 .description-text{
     color: var(--paragraphs);
     font-family: var(--Lexend-Deca);
-    line-height: 1.4rem;
+    line-height: 1.6rem;
 }
 .learn-more-button{
     position: absolute;
@@ -88,8 +89,7 @@ body{
 footer{
     position: absolute;
     text-align: center;
-    bottom: 0;
-    padding: 15px;
+    bottom: 10px;
     width: 100%;
     color: black;
     font-weight: 900;
@@ -98,17 +98,16 @@ footer{
 }
 
 @media screen and (max-width: 933px){
-    body{
-        height: 1450px;
-        position: relative;
-    }
     .container{
-        height: 1450px;
+        height: 1400px;
     }
     .main-card{
-        width: 340px;
-        height: 1350px;
+        width: 310px;
+        height: 1300px;
         grid-template-columns: 1fr;
+    }
+    .cards{
+        padding-right: 25px;
     }
     .sedans-card{
         border-radius: 10px 10px 0 0;
