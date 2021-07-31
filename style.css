@@ -4,8 +4,6 @@
     --Very-dark-cyan: hsl(179, 100%, 13%);
     --paragraphs: hsla(0, 0%, 100%, 0.75);
     --Bg-headings-buttons:  hsl(0, 0%, 95%);
-    --Lexend-Deca-weights: 400;
-    --Big-Shoulders-weights: 700;
     --Lexend-Deca: 'Lexend Deca', sans-serif;
     --Big-Shoulders: 'Big Shoulders Display', cursive;
     box-sizing: border-box;
@@ -27,7 +25,7 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 933px;
-    height: 450px;
+    height: 480px;
 }
 
 /* CARDS */
@@ -53,7 +51,6 @@ body{
 .title{
     color: var(--Bg-headings-buttons);
     font-family: var(--Big-Shoulders);
-    font-weight: var(--Big-Shoulders-weights);
     font-size: 2.5rem;
     letter-spacing: 1px;
     padding: 25px 0;
@@ -61,14 +58,12 @@ body{
 .description-text{
     color: var(--paragraphs);
     font-family: var(--Lexend-Deca);
-    font-weight: var(--Lexend-Deca-weights);
     line-height: 1.4rem;
 }
 .learn-more-button{
     position: absolute;
     bottom: var(--cards-padding);
     font-family: var(--Lexend-Deca);
-    font-weight: var(--Lexend-Deca-weights);
     background-color: var(--Bg-headings-buttons);
     border-radius: 100px;
     height: 2.7rem;
